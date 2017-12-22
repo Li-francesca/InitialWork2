@@ -24,4 +24,13 @@ public class UserServiceTest extends AbstractTestCase {
         userService.newUser(user);
 
     }
+
+    @Test
+    public void listAllUsers() throws Exception {
+
+        for (User user : userService.listAllUsers()){
+            System.out.println(user.getUserName());
+        }
+
+    }
 }
